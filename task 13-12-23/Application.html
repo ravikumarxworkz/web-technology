@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplication Detils</title>
+  </head>
+  <body>
+    <form action="login.html"></form>
+
+    <label for="name">Firstname</label>
+    <input
+      type="text"
+      id="name"
+      pattern="[A-Z][a-z]*"
+      title="Please enter a name with the first letter capitalized"
+      required
+    /><br /><br />
+    <label for="email">Email-Id</label>
+    <input type="email" name="emailid" id="email" pattern=".+@example\.com" required /> <br /><br />
+    <label for="mobile">mobile number</label>
+    <input
+      type="tel"
+      name="mobilenumber"
+      id="mobile"
+      value="+91"
+      maxlength="13"
+    /><br /><br />
+    <label for="Dob">date of birth</label>
+    <input
+      type="date"
+      name="date"
+      id="Dob"
+      title="date of birth"
+      required
+    /><br /><br />
+    <label for="gender">Gender</label>
+    <input type="radio" name="Gender" id="gender" value="male" />male
+    <input type="radio" name="Gender" id="gender" value="female" />female
+    <br /><br />
+    <label for="file">uplod your photo</label>
+    <input type="file" id="file" accept="image/*" multiple required 
+    /> <br><br>
+    <label for="password">password</label>
+    <input
+      type="password"
+      id="password"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+      title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character."
+      required
+    /> <input type="checkbox" id="check" ><label for="check">checkbox</label>
+    <br /><br />
+    <button type="submit" ><a href="appresponsepage.html" target="_blank">submit</a></button><br><br>
+    <button type="reset">reset</button>
+  </body>
+</html>

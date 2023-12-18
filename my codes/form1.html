@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<HTml lang="EN">
+    <meta charset="UTF-8">
+<div style="background-color:yellow;text-align: left;width: 300px;"><p>input type attributes</p></div>
+<script type='text/javascript'> function color() { var colorval=document.getElementById("choose-color").value; 
+    document.getElementById("color").innerHTML="<b>"+colorval+"</b>"; } </script> Pick a color: <input type="color" 
+    name="choose-color" id="choose-color" /> <br/> <input type="button" value='submit' onclick='color()'/> <div id='color'> 
+    </div>
+    date<input type="date"name="date" id="day1"><br><br>
+    date &time<input type="datetime-local"name="datetime-local" id="daytime-local"/><br><br>
+    date &time<input type="datetime"name="date-time" id="day-time"/><br><br>
+    date-timei=<input type="time"name="time" id="time"/><br><br>
+    E-MAIL<input type="email" name="e-mail"id="email" size="15"/><br><br>
+   month<input type="month" name="month"><br><br>
+   <script type='text/javascript'> function month() { var monthval=document.getElementById("month-one").value; 
+    document.getElementById("month").innerHTML="<b>"+monthval+"</b>"; } </script> Choose the month and year: <input 
+    type="month" name="month-one" id="month-one" /> <br/> <input type="button" value='submit' onclick='month()'/> <div 
+    id='month'> </div>
+    enter the value between 1 to 50<input type="number" min="1" max="50"><br><br>
+    enter the value between 1 to 50<input type="range" min="10" max="50"><br><br>
+    text <input type="search" name="search"><br><br>
+    website<input type="url" name="url"id="url"><br><input type="submit" value="sunmit"/><br><br>
+     <input type="image"src="C:\Users\Ravi\Desktop\html\Ubcity2.jpg" alt="submit" height="50"><br><br>
+     enter your fovrite game<input list="sports"name="sport"/><datalist id="sports"><option value="kho-kho"></option>kho-kho<option value="kabbadi">kabbadi</option>
+    <option value="cricket"></option>cricket<option value="volleyboll"></option>volleyboll</datalist>
+    <script type='text/javascript'> function novalidate() { var novalidateval=document.getElementById("no-validate").value; 
+        document.getElementById("novalidate").innerHTML="<b>"+novalidateval+"</b>"; } </script> Enter your mail id: <input 
+        type="novalidate" name="no-validate" id="no-validate" /> <br/> <input type="button" value='submit' 
+        onclick='novalidate()'/> <div id='novalidate'> </div>
+        <form action="demo1.php">
+            enter your log in code: <input type="text" name="code" pattern="(A-Za-z){5}" title="fiveletter code">
+            <form action="demo26.php" target="my_iframe1"> Quantity (between 1 and 10): <input type="number" name="qty" step="5" /> <input type="submit" /> </form>
+            <a href="https://www.youtube.com/" target="_blank" accesskey="I">youtube</a> 
+            <p contenteditable="true">u can modified</p>    
+            <p contenteditable="flase">u can modified</p>  <br>
+            <p contenteditable="true">u can modified</p><h4 contenteditable="inherit">chnage this content</h4><br>
+            <p draggable="true">u can modified</p>  <br>
+            <p draggable="no">u can modified</p>  <br>
+            <p hidden="hidden">india is beautiful country</p><br>
+            <p hidden="hidden">You cannot view this content</p> <h4>View this visible content</h4><br>
+            <script type="text/javascript"> function displayResult() { document.getElementById("myHeader").innerHTML="A good 
+                reason, is not necessarily a relevant one."; } </script> <p id="myHeader">Welcome</p> <button 
+                onclick="displayResult()">Click Here</button> <br>
+             <p contenteditable="true" spellcheck="true">Insert words in between this text.</p>
+             <p contenteditable="true" spellcheck="false">Insert words in between this text.</p><br>
+             <a href="https://www.hscripts.com/tutorials/html5/tabindex-attribute.html" tabindex="2">Hscripts</a> 
+             <a href="https://www.hscripts.com/tutorials/html5/tabindex-attribute.html" tabindex="1">Withfriendship</a><br><br>
+             <video width="450"height="350" src="D:\MOVIE\movies\kannada\Kirik Party.mkv"type="video/mp4">Kirik party</video><br>
+             <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+        </form>
+</HTml>

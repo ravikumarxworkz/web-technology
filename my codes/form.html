@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+<style>
+    input{
+        font-weight: bold;
+        background-color: aqua;
+        color: black;
+    }
+    body {
+  width: 500px;
+  height: 300px;
+  border: 2px solid;
+}
+input[type="text"]:enabled {
+  background-color: lightblue;
+}
+input[type="text"]:required {
+  background-color: red;
+}
+
+</style>
+    <body>
+        <h1>Login Form</h1>
+        <form action="demo.html" style="border:inherit">
+            <label for="name">fristName:</label> <input type="text" name="frist" id="name" required><br>
+            <label for="name">lastName:</label><input type="text" name="last" id="name"required><br>
+            <label >gender:</label><input type="checkbox"checked>male <input type="checkbox"checked>female <input type="checkbox"checked> others <br>
+            <label for="agr">age</label> <input type="number" name="age" id="age"required><br>
+            <label for="e-mail">E-mail:</label><input type="email" name="mail" id="e-mail"required><br>
+            <label for="password">password:</label><input type="password" name="password" id="password"required><br><br>
+            select a file<input type="file"required><br><br>
+            enter ur website<input type="url"><br>
+            <input type="button" value="submit">raise query <br><br>
+            <button type="reset">reset</button><br><br>
+            <input type="hidden" name="Language" value="English"/><br><br>
+            tel<input type="tel" value="+91" maxlength="13"required><br><br>
+              </form>       
+    </body>
+</html>

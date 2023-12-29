@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1{
+        width: 100px;
+        height: 100px;
+        background-color:orangered;
+        border-radius: 15px;
+        border-style: groove;
+        box-sizing: border-box;
+        border: solid #0b154d 10px;
+        padding: 5px;
+        box-shadow: 10px 5px 5px red;
+        animation:mymove 2s ease-in-out 4; 
+        position: relative;
+        animation-direction:alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+    @keyframes mymove {
+       0%{ background-color: orange; }
+       0% {left: 0px; top:0px;}
+       25%{ background-color: white;}
+       25% {left: 200px; top:0px;}
+       5%{ background-color: aqua; }
+       50% {left: 200px; top:200px;}
+       75%{background-color: green; }
+       75% {left: 0px; top:200px;}
+       100%{background-color: rgb(178, 10, 108); }
+       100% {left: 0px; top:0px;}
+    }
+    /* .div1:hover{
+        width:200px;
+        height: 200px;
+    }   */
+</style>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

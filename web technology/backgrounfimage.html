@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden; /* Prevent default browser scrollbars */
+    }
+
+    .background-container {
+        height: 100px;
+     position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -3;
+      animation: scrollBackground 15s  linear  infinite;
+    }
+
+    /* Define keyframe animation */
+    @keyframes scrollBackground {
+      0% { transform: translateX(100%); }
+      /* 25% { transform: translateX(-25%); }
+      50% { transform: translateX(-50%); }
+      75% { transform: translateX(-75%); } */
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Additional styling for the content */
+    .content {
+      padding: 20px;
+      text-align: center;
+      color: rgb(81, 15, 213);
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+  <title>Scrolling Background Image</title>
+</head>
+<body>
+  <div class="background-container">
+    <img src="karntaka.png" alt="Background Image 1" height="250px" width="500px"> 
+    <img src="badami.jpeg" alt="Background Image 2" height="250px" width="500px">
+    <img src="vindan.jpeg" alt="Background Image 3" height="250px" width="500px">
+    <img src="bengalurupalca.jpeg" alt="i4" height="500px">
+    <img src="mysore.jpeg" alt="i5"  width="500px">
+    <!-- <img src="best.jpeg" alt="i6" height="250px" width="500px"> -->
+    <!-- <img src="murdeswar.jpg" alt="Background 3" height="250px" width="500px">  -->
+</div>
+ <div class="content">
+        <h1>Your Content Goes Here</h1>
+        <p>This is an example of a scrolling background image in HTML and CSS.</p>
+      </div>
+</body>
+</html>

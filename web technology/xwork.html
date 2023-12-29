@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="1logo.jpeg">
+  <title>karnatakaTourism.com</title>
+  <style>
+    div{
+        margin: 20px;
+    }
+    #main {
+      width: 1200px;
+     height: 500px;
+      margin-left: 40px;
+      margin-top: 30px;
+      font-family: Arial, sans-serif;
+      border: 10px double yellow;
+      box-sizing:  content-box ;
+      box-shadow: 5px 5px 5px 5px red;
+      border-radius: 50px;
+      
+      /* border-color: rgb(96, 19, 117); */
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+   
+    input {
+     color:black;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 200px;
+      padding: 5px;
+      margin-left: 90px;
+      margin-bottom: 16px;
+      box-sizing: content-box;
+      border-radius: 20px; 
+      background-color: rgb(140, 173, 179);
+           
+    }
+     select {
+        color: #0f0f0f;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 200px;
+      padding: 5px;
+      margin-left: 10px;
+      margin-bottom: 16px;
+      background-color: rgb(35, 152, 175);
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    button {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-left: 350px;
+     margin-right: -180px;
+      padding: 10px 20px;
+      background-color: yellow;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button.clear {
+      background-color: #f44336;
+    }
+    #genderm{
+        margin: -90px;
+    }
+    #genderf{
+        margin: -90px;
+    }
+    h5{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f44336;
+        text-shadow: 5px 2px rgb(214, 187, 68);
+        text-align: center;
+        border-radius: 10px;
+        font-size: large;
+        text-decoration: dodgerblue;
+        
+    }
+    #pinpost{
+      margin-left: 200px;
+    }
+    #gender{
+        margin: 30px;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .background{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      animation: scrollBackground 20s linear infinite;
+    }
+
+    @keyframes scrollBackground {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+    <div id="main">
+        <div class="background">
+    <img src="karntaka.png" alt="Background Image 1" height="170px">
+    <img src="vindan.jpeg" alt="Background Image 2" >
+    <img src="hamppi.jpeg" alt="Background Image 3" height="170px">
+    <img src="hamppi1.jpeg" alt="Background Image 4 " height="170px">
+    <img src="badami.jpeg" alt="Background Image 5" height="300px">
+    <img src="bahubali.jpeg" alt="Background Image 3" height="300px" width="200px">
+    <img src="murdeswar.jpg" alt="Background Image 3" height="300px" width="200px">
+    <img src="nandi.jpeg" alt="Background Image 3" height="272px" width="250px">
+    </div>
+                   <h5> karnataka Tourist Form</h5> 
+  <form id="xworkForm">
+    <label for="firstline"> <input type="text" id="firstName" name="firstName" placeholder="FirstName">
+
+    <input type="text" id="middleName" name="middleName" placeholder="MiddleName">
+
+    <input type="text" id="lastName" name="lastName" required placeholder="LastName">
+     
+  <span id="gender"> Gender:<input type="radio" id="genderm" name="gender" required placeholder="male">Male &nbsp;
+    Female<input type="radio" id="genderf" name="gender" required placeholder="female"></span></label>
+    <br>
+    <div id="select">
+        <table>
+            <tr>
+        <th> <label for="country"> country<select id="country" name="country">
+            <option value="country">country</option>
+            <option value="india">India</option>
+            <option value="russia">Russia</option>
+            <option value="japana">japana</option>
+            <option value="usa">Usa</option>
+            <option value="uk">Uk</option>
+          </select></label></th>
+          <th> <label for="states"> States <select id="states" name="states">
+        <option value="state">state</option>
+            <option value="karnataka">karnataka</option>
+            <option value="telagan">telagan</option>
+            <option value="andrapradesh">andrapradesh</option>
+            <option value="up">up</option>
+            <option value="kerala">kerala</option>
+          </select></label></th>
+          <th><label for="">District <select id="districts" name="district">
+            <option value="district">District</option>
+            <option value="belagavi">belagvi</option>
+            <option value="bengaluru">bengaluru</option>
+            <option value="bagalkot">bagalkot</option>
+            <option value="huballi">huballi</option>
+            <option value="gadag">Gadag</option>
+          </select></label></th>
+          <th> <label for="taluks"> Taluk <select id=" taluks" name=" taluk">
+            <option value="taluk">Taluk</option>
+            <option value="athani">Athani</option>
+            <option value="kagawad">kagawad</option>
+            <option value="chikodi">chikodi</option>
+            <option value="ramadruga">ramadruga</option>
+          </select></label></th>
+        </tr>
+        </table>
+        </div>
+        <br>
+        <div id="pinpost">
+            <input type="text" id="pincode" name="pincode" required placeholder="pincode">
+   
+            <input type="text" id="postname" name="postname" required placeholder="post Name">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="button" class="clear" onclick="clearForm()">Clear</button>
+        </div>
+
+  </form>
+</fieldset>
+  <script>
+    function clearForm() {
+      document.getElementById("xworkForm").reset();
+    }
+  </script>
+</div>
+</body>
+</html>
